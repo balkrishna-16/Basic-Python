@@ -1,2 +1,2 @@
 # Basic-Python
-Only Python code/
+Only Python code
