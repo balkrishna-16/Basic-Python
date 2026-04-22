@@ -1,0 +1,77 @@
+1. Largest of three numbers (if-elif-else)
+_____________________________________________
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+if a > b and a > c:
+    print("Largest is:", a)
+elif b > a and b > c:
+    print("Largest is:", b)
+else:
+    print("Largest is:", c)
+2. Leap year check
+_____________________________________
+
+year = int(input("Enter year: "))
+
+if year % 4 == 0:
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
+3. Count digits using while loop
+_______________________________________
+
+num = int(input("Enter a number: "))
+count = 0
+
+while num != 0:
+    num = num // 10
+    count += 1
+
+print("Total digits:", count)
+4. Sum from 1 to n
+______________________________________
+
+n = int(input("Enter number: "))
+sum = 0
+
+for i in range(1, n+1):
+    sum += i
+
+print("Sum is:", sum)
+5. Even numbers from 1 to 50
+_________________________________________
+
+for i in range(1, 51):
+    if i % 2 == 0:
+        print(i)
+6. Reverse a number
+_____________________________________________
+
+num = int(input("Enter number: "))
+rev = 0
+
+while num != 0:
+    digit = num % 10
+    rev = rev * 10 + digit
+    num = num // 10
+
+print("Reversed number:", rev)
+7. Palindrome check
+________________________________________
+
+num = int(input("Enter number: "))
+temp = num
+rev = 0
+
+while num != 0:
+    digit = num % 10
+    rev = rev * 10 + digit
+    num = num // 10
+
+if temp == rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
